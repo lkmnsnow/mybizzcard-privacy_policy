@@ -3,47 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <title>MyBizzCard – Privacy Policy</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
     font-family: Arial, sans-serif;
-    background:#f4f6f8;
-    margin:0;
-    padding:20px;
-    line-height:1.6;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
 }
 .container {
-    max-width:900px;
-    background:white;
-    padding:30px;
-    margin:auto;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
 }
-h1 {
-    color:#0b3c5d;
-    margin-bottom:10px;
+button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+button:hover {
+    background: #2ea043;
 }
 pre {
     white-space: pre-wrap;
-    word-wrap: break-word;
-    font-family: Arial, sans-serif;
-    font-size:15px;
 }
-.footer {
-    margin-top:40px;
-    text-align:center;
-    font-size:13px;
-    color:#666;
+h1 {
+    margin-top: 0;
 }
 </style>
 </head>
 <body>
+
 <div class="container">
+    <button onclick="copyText()">Copy</button>
+    <h1>Privacy Policy</h1>
 
-<h1>MyBizzCard – Privacy Policy</h1>
-
-<pre>
+<pre id="policyText">
 PRIVACY POLICY
 Last Updated: 12 January 2026
 
@@ -89,12 +91,13 @@ We do not store the submitted OCR text or card images on our servers.
 OpenAI processes data under its own Privacy Policy and Terms.
 
 ---------------------------------------
-4. ADVERTISING (FREE PLAN)
+4. ADVERTISING
 ---------------------------------------
-The Free Plan may include third-party ads (e.g., Google AdMob).
-Ad providers may collect device identifiers and basic usage/interaction data for ad delivery and fraud prevention.
+The current version of the App does not display third-party advertisements and does not integrate any ad networks.
 
-We do not share your business card images or extracted contact data with advertisers.
+No business card images, extracted text, or contact data are shared with any advertising partners.
+
+If advertisements are added in a future version, this Privacy Policy will be updated before they are enabled.
 
 ---------------------------------------
 5. PAYMENTS AND SUBSCRIPTIONS
@@ -142,10 +145,15 @@ Disputes may be resolved by the competent courts of Istanbul unless otherwise re
 Support / Privacy questions: mybizzzcard@gmail.com
 </pre>
 
-<div class="footer">
-© 2025 MyBizzCard
 </div>
 
-</div>
+<script>
+function copyText() {
+    const text = document.getElementById("policyText").innerText;
+    navigator.clipboard.writeText(text);
+    alert("Privacy Policy copied!");
+}
+</script>
+
 </body>
 </html>
