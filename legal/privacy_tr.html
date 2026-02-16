@@ -1,3 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>MyBizzCard – Gizlilik Politikası</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+}
+button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+button:hover {
+    background: #2ea043;
+}
+pre {
+    white-space: pre-wrap;
+}
+h1 {
+    margin-top: 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<button onclick="copyText()">Kopyala</button>
+
+<h1>Gizlilik Politikası</h1>
+
+<pre id="policyText">
+
 GİZLİLİK POLİTİKASI
 Son Güncelleme: 12 Ocak 2026
 
@@ -36,8 +89,8 @@ Uygulama yapay zeka destekli veri çıkarma içerir. Yapay zeka kullanıldığı
 Bu veriler OpenAI’ye gönderilir ve yapılandırılmış kart alanları cihazınıza geri döner.
 
 Yapay zeka kullanım sınırları:
-• Ücretsiz Plan: sınırlı sayıda ömür boyu AI taraması
-• AI Pro Plan: uygulamada belirtilen koşullara bağlı aylık kullanım kotası
+• Ücretsiz Plan: sınırlı sayıda ömür boyu AI taraması  
+• AI Pro Plan: uygulamada belirtilen koşullara bağlı aylık kullanım kotası  
 
 Gönderilen OCR metni veya kart görüntülerini sunucularımızda saklamayız.
 
@@ -68,7 +121,7 @@ Bu bilgiler kart görüntüsü veya iletişim verisi içermez.
 7. GÜVENLİK
 ---------------------------------------
 AI istekleri şifreli HTTPS bağlantılarıyla iletilir.
-Kullanıcılar kendi cihaz güvenliğünden sorumludur.
+Kullanıcılar kendi cihaz güvenliğinden sorumludur.
 
 ---------------------------------------
 8. VERİ SAKLAMA
@@ -96,3 +149,18 @@ Uyuşmazlıklar İstanbul mahkemelerinde çözülebilir.
 12. İLETİŞİM
 ---------------------------------------
 Destek / Gizlilik: mybizzzcard@gmail.com
+
+</pre>
+
+</div>
+
+<script>
+function copyText() {
+    const text = document.getElementById("policyText").innerText;
+    navigator.clipboard.writeText(text);
+    alert("Gizlilik politikası kopyalandı!");
+}
+</script>
+
+</body>
+</html>
