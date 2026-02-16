@@ -1,4 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>MyBizzCard – 隐私政策</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+}
+button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+button:hover {
+    background: #2ea043;
+}
+pre {
+    white-space: pre-wrap;
+}
+h1 {
+    margin-top: 0;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<button onclick="copyText()">复制</button>
+
+<h1>隐私政策</h1>
+
 <pre id="policyText">
+
 隐私政策
 最后更新日期：2026年1月12日
 
@@ -98,4 +150,18 @@ AI 请求通过加密的 HTTPS 连接传输。
 12. 联系方式
 ---------------------------------------
 支持 / 隐私相关问题：mybizzzcard@gmail.com
+
 </pre>
+
+</div>
+
+<script>
+function copyText() {
+    const text = document.getElementById("policyText").innerText;
+    navigator.clipboard.writeText(text);
+    alert("隐私政策已复制！");
+}
+</script>
+
+</body>
+</html>
