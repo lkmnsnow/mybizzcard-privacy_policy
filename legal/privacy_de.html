@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>MyBizzCard – Datenschutzrichtlinie</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #ffffff;
+    padding: 20px;
+    line-height: 1.6;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+}
+button {
+    float: right;
+    background: #238636;
+    border: none;
+    padding: 10px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+button:hover {
+    background: #2ea043;
+}
+pre {
+    white-space: pre-wrap;
+}
+h1 {
+    margin-top: 0;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <button onclick="copyText()">Kopieren</button>
+    <h1>Datenschutzrichtlinie</h1>
+
+<pre id="policyText">
+DATENSCHUTZRICHTLINIE
+Zuletzt aktualisiert: 12. Januar 2026
+
+Diese Datenschutzrichtlinie erläutert, wie die mobile Anwendung MyBizzCard („App“, „wir“, „uns“, „unser“) Informationen verarbeitet. Durch die Nutzung der App stimmst du dieser Richtlinie zu.
+
+Kontakt: mybizzzcard@gmail.com
+
+---------------------------------------
+1. INFORMATIONEN, DIE WIR NICHT AUF UNSEREN SERVERN SPEICHERN
+---------------------------------------
+Wir betreiben einen sicheren Verarbeitungsserver, um KI-Funktionen zu ermöglichen.
+Dieser Server speichert keine Visitenkartenbilder, OCR-Texte oder extrahierten Kontaktdaten.
+Wir erstellen keine Benutzerkonten.
+
+Deine Scan-Ergebnisse werden nur auf deinem Gerät gespeichert (und optional im Telefonbuch, wenn du dies auswählst).
+
+---------------------------------------
+2. OFFLINE-VERARBEITUNG (KOSTENLOSER PLAN)
+---------------------------------------
+Das Offline-Scannen erfolgt auf deinem Gerät. Wenn du Offline-Funktionen verwendest, werden Kartenbilder und Texte lokal verarbeitet.
+
+Beispiele:
+- Karte scannen (offline)
+- QR-Code auf Karte scannen (offline)
+- Gespeicherte, zugeschnittene Karte (lokal auf deinem Gerät)
+- Manuelle Kartenerstellung
+
+---------------------------------------
+3. KI-FUNKTIONEN (OPENAI-VERARBEITUNG)
+---------------------------------------
+Die App enthält KI-gestützte Extraktion. Wenn KI genutzt wird, sendet die App sicher entweder
+- den auf deinem Gerät extrahierten OCR-Text oder
+- ein Kartenbild (abhängig von Funktion und Modus)
+
+an OpenAI zur Verarbeitung. OpenAI liefert strukturierte Kartenfelder an dein Gerät zurück.
+
+KI-Limits in der App:
+• Kostenloser Plan: begrenzte Anzahl lebenslanger KI-Scans  
+• AI Pro-Plan: monatliches KI-Nutzungskontingent gemäß den in der App angezeigten Bedingungen
+
+Wir speichern die übermittelten OCR-Texte oder Kartenbilder nicht auf unseren Servern.
+
+OpenAI verarbeitet Daten gemäß seiner eigenen Datenschutzrichtlinie und seinen Nutzungsbedingungen.
+
+---------------------------------------
+4. WERBUNG
+---------------------------------------
+Die aktuelle Version der App zeigt keine Werbung von Drittanbietern an und integriert keine Werbenetzwerke.
+
+Es werden keine Visitenkartenbilder, extrahierten Texte oder Kontaktdaten an Werbepartner weitergegeben.
+
+Sollten zukünftig Anzeigen hinzugefügt werden, wird diese Datenschutzrichtlinie vor Aktivierung aktualisiert.
+
+---------------------------------------
+5. ZAHLUNGEN UND ABONNEMENTS
+---------------------------------------
+Abonnements und Zahlungen werden von Google Play abgewickelt.
+Wir erfassen oder speichern keine Zahlungs­karten­informationen.
+
+---------------------------------------
+6. FEHLERPROTOKOLLE & LEISTUNG
+---------------------------------------
+Wir können anonymisierte Absturz-/Leistungsdaten von der Google Play Console erhalten.
+Diese Informationen enthalten keine Visitenkartenbilder oder extrahierten Kontaktdaten.
+
+---------------------------------------
+7. SICHERHEIT
+---------------------------------------
+KI-Anfragen werden über verschlüsselte HTTPS-Verbindungen übertragen.
+Die Benutzer sind verantwortlich für die Sicherheit ihrer eigenen Geräte und dafür, was sie scannen.
+
+---------------------------------------
+8. DATENAUFBEWAHRUNG
+---------------------------------------
+Wir speichern keine Visitenkartenbilder oder extrahierten Texte auf unseren Servern.
+Daten, die von OpenAI verarbeitet werden, unterliegen den Richtlinien von OpenAI.
+
+---------------------------------------
+9. DATENSCHUTZ FÜR KINDER
+---------------------------------------
+Die App richtet sich nicht an Kinder unter 13 Jahren. Wir sammeln nicht wissentlich personenbezogene Daten von Kindern.
+
+---------------------------------------
+10. ÄNDERUNGEN
+---------------------------------------
+Wir können diese Richtlinie gelegentlich aktualisieren. Die fortgesetzte Nutzung der App bedeutet, dass du die aktualisierte Richtlinie akzeptierst.
+
+---------------------------------------
+11. ANWENDBARES RECHT
+---------------------------------------
+Diese Richtlinie unterliegt dem Recht der Türkei.
+Streitigkeiten können, sofern gesetzlich nicht anders vorgeschrieben, vor den zuständigen Gerichten in Istanbul beigelegt werden.
+
+---------------------------------------
+12. KONTAKT
+---------------------------------------
+Support / Datenschutzfragen: mybizzzcard@gmail.com
+</pre>
+
+</div>
+
+<script>
+function copyText() {
+    const text = document.getElementById("policyText").innerText;
+    navigator.clipboard.writeText(text);
+    alert("Datenschutzrichtlinie kopiert!");
+}
+</script>
+
+</body>
+</html>
