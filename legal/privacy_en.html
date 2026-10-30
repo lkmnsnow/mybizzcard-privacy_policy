@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyBizzCard – Privacy Policy</title>
 <style>
 body {
@@ -29,195 +30,177 @@ button {
     border-radius: 6px;
     font-size: 14px;
 }
-button:hover {
-    background: #2ea043;
-}
-pre {
-    white-space: pre-wrap;
-}
-h1 {
-    margin-top: 0;
-}
+button:hover { background: #2ea043; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+h1 { margin-top: 0; }
 </style>
 </head>
 <body>
-
 <div class="container">
     <button onclick="copyText()">Copy</button>
     <h1>Privacy Policy</h1>
-
 <pre id="policyText">
 PRIVACY POLICY
-Last Updated: 12 January 2026
 
-This Privacy Policy explains how the MyBizzCard mobile application (“App”, “we”, “us”, “our”) handles information. By using the App, you agree to this Policy.
+Last updated: 30 October 2026
 
-Contact: mybizzzcard@gmail.com
+This Privacy Policy explains how MyBizzCard (the “App”) accesses, uses, processes, and retains information. References to “we,” “us,” and “our” mean the developer of MyBizzCard identified in its Google Play listing.
 
----------------------------------------
-1. INFORMATION WE DO NOT STORE ON OUR SERVERS
----------------------------------------
-We operate a secure processing server to enable AI features.
-This server does not store business card images, OCR text, extracted contact data, CRM notes, tags, reminder content, CSV files, or Excel files after processing is completed.
-We do not create user accounts.
-
-Your scanned results, batch lists, CRM entries, tags, reminders, export files, and saved card data are stored only on your device unless you choose to export or save them elsewhere using your device features.
+Privacy and support contact: mybizzzcard@gmail.com.
 
 ---------------------------------------
-2. OFFLINE PROCESSING (FREE PLAN)
+1. Information handled by the App
 ---------------------------------------
-Offline scanning runs on your device. When you use offline features, card images and text are processed locally.
+MyBizzCard helps you scan business cards and manage contact information. Information you scan or enter can include names, job titles, company names, phone numbers, email addresses, websites, addresses, card images, and local-language contact details. You can also add batch names, CRM notes, tags, and reminder information.
 
-Examples:
-- Scan Card (offline)
-- QR Scan on Card (offline)
-- Save Cropped Card (saved locally on your device)
-- Manual card creation
+Scanned results and your contact-management records are stored on your device. They may also be included in device backups or transferred when you use export, sharing, phonebook, or other device/account features. AI processing and technical service records are described separately below.
+
+You do not need to create a MyBizzCard user account.
 
 ---------------------------------------
-3. AI FEATURES (OPENAI PROCESSING)
+2. On-device and offline features
 ---------------------------------------
-The App includes AI-powered extraction. When AI is used, the App securely sends either:
-- OCR text extracted on your device, or
-- A card image (depending on the feature and mode)
+Offline card recognition, QR scanning, manual entry, cropping, and local contact management process their card content on your device. Those actions do not send card content to OpenAI unless you separately use an AI feature.
 
-to OpenAI for processing. OpenAI returns structured card fields to your device.
-
-AI limits in the App:
-• Free Plan: a limited number of lifetime AI scans
-• AI Pro Plan: a monthly AI usage quota, subject to plan conditions shown in the App
-
-We do not store the submitted OCR text or card images on our servers.
-
-OpenAI processes data under its own Privacy Policy and Terms.
+Some scanning components use Google services and may download required components or communicate with Google as part of providing the feature. Their availability and handling of service information are subject to Google's applicable terms and privacy information.
 
 ---------------------------------------
-4. BATCH CRM FEATURES
+3. AI features and processing
 ---------------------------------------
-The App may allow you to create and manage batch lists, scan multiple business cards, add CRM notes, assign tags, track reminder details, filter leads, and manage contact records in a simple on-device CRM workflow.
+When you use an AI extraction or translation feature, the selected business card image or OCR text is transmitted over HTTPS through our backend, hosted on Render, to the OpenAI API. The extracted contact fields are returned to the App.
 
-This batch CRM information is stored locally on your device unless you choose to:
-- export it as CSV or Excel,
-- save selected contacts to your phonebook,
-- send batch emails using your installed email app,
-- or share exported files manually.
+The submitted content can include personal information visible on the selected card, such as names, job titles, companies, phone numbers, email addresses, websites, and addresses.
 
-We do not store your batch CRM records on our servers.
+AI scanning does not require uploading your existing phonebook. Phonebook access for destination-account selection and duplicate checking is handled separately on your device.
 
----------------------------------------
-5. USER RESPONSIBILITY AND LAWFUL USE
----------------------------------------
-You are responsible for ensuring that you have the legal right to scan, save, export, store, email, share, or add business card and contact information to your phonebook or CRM records using the App.
+Our backend does not retain submitted card images, OCR text, or extracted contact contents after processing is completed. Separate technical records are described in Section 13. OpenAI's processing and retention are subject to the applicable API terms and our account's data controls. See OpenAI's API data controls (https://developers.openai.com/api/docs/guides/your-data).
 
-Where required by applicable law, you must obtain the card holder’s consent or have another valid legal basis before processing their personal data. You are also responsible for providing any notices required by applicable law and for honoring any applicable objection, deletion, access, correction, or other privacy rights requests.
-
-The App is provided as a tool for managing contact information. We do not determine your legal basis for processing personal data and we are not responsible for how you use, share, export, store, or otherwise process contact data outside the App.
+AI usage limits depend on your plan and are shown in the App. You can use available non-AI features without submitting card content to OpenAI.
 
 ---------------------------------------
-6. PHONEBOOK / CONTACT SAVING
+4. Batch lists, CRM, and reminders
 ---------------------------------------
-If you choose to save a scanned contact or selected CRM entries to your device phonebook, the App writes that information to the contacts account you select on your device.
+You can organize scanned contacts into lists and add notes, tags, and follow-up details. These records are maintained locally unless you choose to export or share them, save them to another app or account, or include them in device backups.
 
-This may include:
-- name
-- job title
-- company
-- phone numbers
-- email addresses
-- website
-- address
-- local-language fields
-- notes, tags, batch details, or reminder details when applicable
+Where a reminder feature uses your device calendar, the App requests the calendar permissions needed for that feature. Calendar entries saved to a synchronized account may be processed by that account's provider under its settings and privacy policy.
 
-Phonebook storage is handled by your device operating system and the contact account provider you choose (for example, local device storage, Google Contacts, SIM, or another supported contact account).
-
-We do not control or store contact data once you save it into your phonebook.
+We do not maintain your batch CRM records on our processing server.
 
 ---------------------------------------
-7. EXPORTS (CSV / EXCEL / VCF)
+5. Responsible use of contact information
 ---------------------------------------
-If you use export features, the App may generate CSV, Excel, or VCF files locally on your device.
-These exported files may contain business card details, CRM details, tags, reminder information, batch names, and other information you entered or scanned.
+Business card and contact details may belong to other people. Use the App only where you have an appropriate legal basis to scan, save, export, contact, or share those details. Obtain permission and provide notices where required by applicable law, and respect requests concerning those details.
 
-Exported files are stored only on your device in the location selected by the App or the Android system.
-You are responsible for how you store, send, upload, or share exported files after export.
-
-We do not upload exported CSV, Excel, or VCF files to our servers.
+You control which cards you submit for AI processing and which contacts you save, export, or share. These responsibilities do not exclude or limit any obligations we have under applicable privacy law.
 
 ---------------------------------------
-8. EMAIL FEATURES
+6. Phonebook access and contact saving
 ---------------------------------------
-If you use batch email tools or contact actions that open an email app, the App passes selected email addresses to the email application installed on your device so you can review and send the message yourself.
+When you choose Save to Phonebook, the App requests contacts permissions where required by Android.
 
-We do not send emails from our own servers.
-Any email you send is handled by your chosen email provider or email app.
+- Read Contacts: used to identify available destination accounts and, in versions with duplicate checking, compare selected contacts against existing phonebook entries.
+- Write Contacts: used to save the selected contact information to the destination account you choose.
 
----------------------------------------
-9. ADVERTISING
----------------------------------------
-The current version of the App does not display third-party advertisements and does not integrate any ad networks.
+Phonebook information read for these features is processed locally on your device. These features do not upload your existing phonebook contacts to our backend or OpenAI.
 
-No business card images, extracted text, CRM data, contact data, reminder data, or exported files are shared with any advertising partners.
+Saved details may include names, job titles, companies, phone numbers, email addresses, websites, addresses, and applicable notes, tags, batch details, and reminder information.
 
-If advertisements are added in a future version, this Privacy Policy will be updated before they are enabled.
+If you select Google, Samsung, Exchange, or another synchronized account, its provider may synchronize saved contacts according to your account settings and its privacy policy.
 
----------------------------------------
-10. PAYMENTS AND SUBSCRIPTIONS
----------------------------------------
-Subscriptions and payments are handled by Google Play.
-We do not collect or store payment card information.
-
-Subscription status, product details, and pricing are provided by Google Play Billing according to your Google Play account, market, and device environment.
+You can decline or revoke contacts permissions in Android settings. Features requiring those permissions will be unavailable, but other App features remain accessible. Manage or delete contacts already saved to your phonebook using your contacts app or account provider.
 
 ---------------------------------------
-11. ERROR LOGS & PERFORMANCE
+7. Exports, backups, and external storage
 ---------------------------------------
-We may receive anonymized crash/performance information from Google Play Console or related platform tools.
-This information does not include business card images, extracted card text, CRM data, phonebook contents, or exported CSV/Excel/VCF files.
+CSV, Excel, VCF, and backup files can contain contact information, card images, and other records you choose to include. These files are generated on your device. Our backend does not receive these user export or backup files through the export feature.
+
+Files may remain in shared storage after uninstalling the App. If you copy them to cloud storage or another device, the destination provider's settings and privacy policy apply. Android or device-provider backup services may also back up eligible app data, depending on your device settings and the App's backup configuration.
 
 ---------------------------------------
-12. SECURITY
+8. Email, messaging, and sharing
 ---------------------------------------
-AI requests are transmitted using encrypted HTTPS connections.
-Locally stored files, CRM entries, exports, and contacts on your device are protected according to your device security, operating system settings, and the apps/accounts you choose to use.
+When you choose an email or sharing action, the App passes the selected information to the app you choose so you can review and complete the action. Depending on the feature, that information can include recipient addresses, message text, contact details, images, or exported files.
 
-Users are responsible for:
-- securing their own devices,
-- controlling what they scan,
-- reviewing exported files,
-- and deciding what to save to phonebook or share externally.
+Customer messages are handled by your selected messaging or email app and provider, not sent by our backend on your behalf. Our backend may separately send technical service-alert emails to the developer. Those alerts are designed not to contain card contents, phonebook contents, or purchase tokens.
 
 ---------------------------------------
-13. DATA RETENTION
+9. Advertising
 ---------------------------------------
-We do not retain business card images, extracted text, CRM notes, tags, reminders, or exported files on our servers.
-Data processed by OpenAI is handled under OpenAI’s policies.
-Locally saved data remains on your device until you delete it, uninstall the App, remove it from your phonebook, or delete exported files manually.
+The current App does not display third-party advertisements or integrate an advertising network. We do not provide card contents or phonebook contents to advertising partners.
+
+The App includes Google Analytics for Firebase, which can process app-instance, device, and advertising identifiers depending on your settings, consent choices, and the applicable SDK configuration. Having analytics or an advertising identifier permission does not mean the App displays advertisements. Analytics is described in Section 11.
+
+We will update this policy if our advertising practices change.
 
 ---------------------------------------
-14. CHILDREN’S PRIVACY
+10. Payments and subscriptions
 ---------------------------------------
-The App is not intended for children under 13. We do not knowingly collect children’s personal information.
+Google Play handles subscription purchases and payments. We do not receive or store your payment-card details.
+
+The App and our backend use subscription purchase tokens, subscription product information, and app information to verify entitlement with Google Play and apply the relevant usage limits. Subscription verification results may be temporarily cached.
+
+Pricing, renewal terms, and subscription management are provided through Google Play. Manage or cancel your subscription through Google Play; uninstalling the App does not cancel it.
 
 ---------------------------------------
-15. CHANGES
+11. Analytics, diagnostics, and technical logs
 ---------------------------------------
-We may update this Policy from time to time. Continued use of the App means you accept the updated Policy.
+We use Google Analytics for Firebase, Firebase Crashlytics, Google Play reporting, and backend service logs to understand App usage, investigate failures, and measure reliability and processing performance.
+
+These services can process technical information such as app-instance or installation identifiers, device and operating-system information, app version, usage events, crash traces, request identifiers, scan counts, processing times, image byte sizes, and error information. Some information may be linked to a pseudonymous identifier; we do not describe all diagnostic information as anonymous.
+
+Phonebook contents and scanned card contents are not intended to be included in analytics events or routine performance logs. The App's backend access logs mask client IP addresses, but network and infrastructure providers may independently process connection information, including IP addresses, to deliver and secure their services.
+
+See Firebase privacy information (https://firebase.google.com/support/privacy) and Google's Privacy Policy (https://policies.google.com/privacy).
 
 ---------------------------------------
-16. GOVERNING LAW
+12. Security and service providers
 ---------------------------------------
-This Policy is governed by the laws of Türkiye.
-Disputes may be resolved by the competent courts of Istanbul unless otherwise required by law.
+AI requests use encrypted HTTPS connections. We use service providers, including Render for backend hosting, OpenAI for AI processing, Google/Firebase for the services described above, and our email provider for developer service alerts. They process the information needed to provide their respective services under the applicable terms and privacy arrangements.
+
+Locally saved information is subject to your device's security and backup settings. Exports, shared content, and synchronized phonebook or calendar entries are also subject to the security and policies of the destinations you choose. No storage or transmission method can be guaranteed completely secure.
+
+Providers may process information in countries other than your own. Their applicable terms and data-protection arrangements govern that processing alongside our obligations under applicable law.
 
 ---------------------------------------
-17. CONTACT
+13. Data retention
 ---------------------------------------
-Support / Privacy questions: mybizzzcard@gmail.com
+We do not retain business card images, extracted card text, CRM notes, tags, reminders, or user-exported files on our processing server after processing is completed.
+
+Our backend retains technical records, including hashed device identifiers, scan usage counters, request identifiers, and timestamps, to enforce usage limits, prevent duplicate processing, and troubleshoot service issues. These records are separate from card contents. Usage and quota records currently have no automatic deletion schedule. Duplicate-request records are removed during subsequent cleanup after their checking window expires. Backend logs follow the hosting provider's applicable retention settings.
+
+OpenAI and Google/Firebase retention depends on the service, its applicable policies, and the account settings or controls in use. Our backend's non-retention of card content is not a promise that every service provider immediately deletes all information.
+
+Local app data remains until you delete it or remove the App's local storage. Uninstalling does not necessarily delete exported files, saved phonebook contacts, calendar entries, or device/cloud backups. Manage those copies through the relevant device, app, or account provider.
+
+---------------------------------------
+14. Your choices and privacy requests
+---------------------------------------
+You can manage permissions in Android settings, choose whether to use AI features, delete locally stored records, and manage exports and synchronized contacts through their respective apps or accounts.
+
+Contact mybizzzcard@gmail.com for privacy questions or requests concerning information we handle. Depending on applicable law, you may have rights to access, correct, delete, restrict, or object to processing of personal information. We may need information sufficient to identify the relevant record and assess your request. We cannot remotely access or delete files stored only on your device or in your independently chosen accounts.
+
+Some technical records may need to be retained where necessary for applicable legal obligations, security, or the establishment or defense of legal claims. Any applicable statutory rights remain unaffected.
+
+---------------------------------------
+15. Children's privacy
+---------------------------------------
+MyBizzCard is not intended for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has submitted personal information to our services, contact us so we can investigate and take appropriate action.
+
+---------------------------------------
+16. Changes and applicable law
+---------------------------------------
+We may update this policy to reflect changes in the App, our practices, or applicable requirements. The date above identifies the latest revision. Where required, we will provide additional notice or obtain consent before materially different processing begins.
+
+This policy is subject to applicable privacy and consumer-protection laws, including mandatory rights that may apply where you live. A choice of Turkish law does not exclude those rights.
+
+---------------------------------------
+17. Contact
+---------------------------------------
+App: MyBizzCard
+Developer: as identified in the MyBizzCard Google Play listing
+Privacy and support: mybizzzcard@gmail.com
 </pre>
-
 </div>
-
 <script>
 function copyText() {
     const text = document.getElementById("policyText").innerText;
@@ -225,6 +208,5 @@ function copyText() {
     alert("Privacy Policy copied!");
 }
 </script>
-
 </body>
 </html>
