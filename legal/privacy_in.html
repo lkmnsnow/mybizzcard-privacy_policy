@@ -2,6 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyBizzCard – Kebijakan Privasi</title>
 <style>
 body {
@@ -29,195 +30,168 @@ button {
     border-radius: 6px;
     font-size: 14px;
 }
-button:hover {
-    background: #2ea043;
-}
-pre {
-    white-space: pre-wrap;
-}
-h1 {
-    margin-top: 0;
-}
+button:hover { background: #2ea043; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+h1 { margin-top: 0; }
 </style>
 </head>
 <body>
-
 <div class="container">
     <button onclick="copyText()">Salin</button>
     <h1>Kebijakan Privasi</h1>
-
 <pre id="policyText">
 KEBIJAKAN PRIVASI
-Terakhir diperbarui: 12 Januari 2026
 
-Kebijakan Privasi ini menjelaskan bagaimana aplikasi seluler MyBizzCard (“Aplikasi”, “kami”, “milik kami”) menangani informasi. Dengan menggunakan Aplikasi, Anda menyetujui Kebijakan ini.
+Terakhir diperbarui: 30 Oktober 2026
 
-Kontak: mybizzzcard@gmail.com
+Kebijakan ini menjelaskan cara MyBizzCard (“Aplikasi”) mengakses, menggunakan, memproses, dan menyimpan informasi. “Kami” merujuk kepada pengembang yang tercantum pada halaman MyBizzCard di Google Play.
 
----------------------------------------
-1. INFORMASI YANG TIDAK KAMI SIMPAN DI SERVER KAMI
----------------------------------------
-Kami mengoperasikan server pemrosesan yang aman untuk mengaktifkan fitur AI.
-Server ini tidak menyimpan gambar kartu nama, teks OCR, data kontak yang diekstrak, catatan CRM, tag, isi pengingat, file CSV, atau file Excel setelah pemrosesan selesai.
-Kami tidak membuat akun pengguna.
-
-Hasil pindai Anda, daftar batch, catatan CRM, tag, pengingat, file ekspor, dan data kartu yang disimpan hanya disimpan di perangkat Anda, kecuali jika Anda memilih untuk mengekspor atau menyimpannya di tempat lain menggunakan fitur perangkat Anda.
+Privasi dan dukungan: mybizzzcard@gmail.com.
 
 ---------------------------------------
-2. PEMROSESAN OFFLINE (PAKET GRATIS)
+1. Informasi yang ditangani Aplikasi
 ---------------------------------------
-Pemindaian offline berjalan di perangkat Anda. Saat Anda menggunakan fitur offline, gambar kartu dan teks diproses secara lokal.
+MyBizzCard membantu memindai kartu nama dan mengelola kontak. Data yang dipindai atau dimasukkan dapat mencakup nama, jabatan, perusahaan, nomor telepon, alamat email, situs web, alamat, gambar kartu, dan kontak dalam bahasa asli. Anda juga dapat menambahkan nama daftar, catatan CRM, tag, dan pengingat.
 
-Contoh:
-- Pindai Kartu (offline)
-- Pindai QR pada Kartu (offline)
-- Simpan Kartu yang Dipotong (disimpan secara lokal di perangkat Anda)
-- Pembuatan kartu secara manual
+Hasil pindai dan catatan pengelolaan kontak disimpan di perangkat. Data dapat masuk ke cadangan perangkat atau ditransfer saat Anda mengekspor, berbagi, menyimpan ke buku telepon, atau memakai fitur perangkat/akun lainnya. Pemrosesan AI dan catatan teknis dijelaskan terpisah di bawah. Anda tidak perlu membuat akun MyBizzCard.
 
 ---------------------------------------
-3. FITUR AI (PEMROSESAN OPENAI)
+2. Fitur lokal dan offline
 ---------------------------------------
-Aplikasi ini mencakup ekstraksi berbasis AI. Saat AI digunakan, Aplikasi mengirimkan secara aman:
-- teks OCR yang diekstrak di perangkat Anda, atau
-- gambar kartu (tergantung fitur dan mode)
+Pengenalan kartu offline, pemindaian QR, input manual, pemotongan gambar, dan pengelolaan lokal memproses konten di perangkat. Tindakan tersebut tidak mengirim konten ke OpenAI kecuali Anda menggunakan fitur AI secara terpisah.
 
-ke OpenAI untuk diproses. OpenAI kemudian mengembalikan bidang kartu yang terstruktur ke perangkat Anda.
-
-Batas penggunaan AI di Aplikasi:
-• Paket Gratis: jumlah pemindaian AI seumur hidup yang terbatas
-• Paket AI Pro: kuota penggunaan AI bulanan, sesuai dengan ketentuan paket yang ditampilkan di Aplikasi
-
-Kami tidak menyimpan teks OCR atau gambar kartu yang dikirimkan di server kami.
-
-OpenAI memproses data sesuai dengan Kebijakan Privasi dan Ketentuannya sendiri.
+Beberapa komponen pemindaian memakai layanan Google serta dapat mengunduh komponen atau berkomunikasi dengan Google untuk menyediakan fitur. Ketersediaan dan penanganan informasi layanan tunduk pada ketentuan dan informasi privasi Google.
 
 ---------------------------------------
-4. FITUR CRM BATCH
+3. Fitur dan pemrosesan AI
 ---------------------------------------
-Aplikasi dapat memungkinkan Anda membuat dan mengelola daftar batch, memindai beberapa kartu nama, menambahkan catatan CRM, menetapkan tag, melacak detail pengingat, memfilter prospek, dan mengelola catatan kontak dalam alur kerja CRM sederhana yang berjalan di perangkat.
+Saat memakai ekstraksi atau terjemahan AI, gambar kartu atau teks OCR yang dipilih dikirim melalui HTTPS, lewat backend kami yang dihosting di Render, ke API OpenAI. Kolom kontak hasil ekstraksi dikembalikan ke Aplikasi.
 
-Informasi CRM batch ini disimpan secara lokal di perangkat Anda, kecuali jika Anda memilih untuk:
-- mengekspornya sebagai CSV atau Excel,
-- menyimpan kontak terpilih ke buku telepon Anda,
-- mengirim email batch menggunakan aplikasi email yang terpasang di perangkat Anda,
-- atau membagikan file hasil ekspor secara manual.
+Konten dapat memuat data pribadi pada kartu: nama, jabatan, perusahaan, telepon, email, situs, dan alamat. Pemindaian AI tidak memerlukan pengunggahan buku telepon Anda yang sudah ada. Akses untuk memilih akun tujuan dan memeriksa duplikat berlangsung secara terpisah di perangkat.
 
-Kami tidak menyimpan catatan CRM batch Anda di server kami.
+Backend tidak menyimpan gambar kartu, teks OCR, atau isi kontak hasil ekstraksi setelah pemrosesan selesai. Catatan teknis terpisah dijelaskan di Bagian 13. Pemrosesan dan retensi OpenAI tunduk pada ketentuan API serta kontrol data akun kami: https://developers.openai.com/api/docs/guides/your-data.
+
+Batas AI mengikuti paket Anda dan ditampilkan di Aplikasi. Fitur non-AI yang tersedia dapat digunakan tanpa mengirim konten kartu ke OpenAI.
 
 ---------------------------------------
-5. TANGGUNG JAWAB PENGGUNA DAN PENGGUNAAN YANG SAH
+4. Daftar batch, CRM, dan pengingat
 ---------------------------------------
-Anda bertanggung jawab untuk memastikan bahwa Anda memiliki hak hukum untuk memindai, menyimpan, mengekspor, menyimpan, mengirim melalui email, membagikan, atau menambahkan informasi kartu nama dan kontak ke buku telepon atau catatan CRM Anda menggunakan Aplikasi.
+Kontak dapat disusun dalam daftar dengan catatan, tag, dan tindak lanjut. Catatan tetap lokal kecuali Anda mengekspor, berbagi, menyimpan ke aplikasi/akun lain, atau memasukkannya ke cadangan perangkat.
 
-Jika diwajibkan oleh hukum yang berlaku, Anda harus memperoleh persetujuan dari pemilik kartu atau memiliki dasar hukum lain yang sah sebelum memproses data pribadinya. Anda juga bertanggung jawab untuk memberikan pemberitahuan apa pun yang diwajibkan oleh hukum yang berlaku dan untuk menghormati hak privasi yang berlaku, termasuk hak untuk menolak, menghapus, mengakses, memperbaiki, atau hak lainnya.
-
-Aplikasi disediakan sebagai alat untuk mengelola informasi kontak. Kami tidak menentukan dasar hukum Anda untuk memproses data pribadi, dan kami tidak bertanggung jawab atas bagaimana Anda menggunakan, membagikan, mengekspor, menyimpan, atau memproses data kontak di luar Aplikasi.
+Jika pengingat memakai kalender perangkat, Aplikasi meminta izin yang diperlukan. Penyedia akun tersinkron dapat memproses entri kalender sesuai pengaturan dan kebijakannya. Kami tidak menyimpan catatan CRM batch Anda di server pemrosesan.
 
 ---------------------------------------
-6. BUKU TELEPON / PENYIMPANAN KONTAK
+5. Penggunaan kontak yang bertanggung jawab
 ---------------------------------------
-Jika Anda memilih untuk menyimpan kontak yang dipindai atau catatan CRM terpilih ke buku telepon perangkat Anda, Aplikasi akan menuliskan informasi tersebut ke akun kontak yang Anda pilih di perangkat Anda.
+Informasi kartu dan kontak dapat merupakan milik orang lain. Gunakan Aplikasi hanya dengan dasar hukum yang sesuai untuk memindai, menyimpan, mengekspor, menghubungi, atau membagikan data tersebut. Dapatkan izin dan berikan pemberitahuan jika diwajibkan hukum, serta hormati permintaan terkait data.
 
-Ini dapat mencakup:
-- nama
-- jabatan
-- perusahaan
-- nomor telepon
-- alamat email
-- situs web
-- alamat
-- kolom dalam bahasa lokal
-- catatan, tag, detail batch, atau detail pengingat jika berlaku
-
-Penyimpanan di buku telepon dikelola oleh sistem operasi perangkat Anda dan penyedia akun kontak yang Anda pilih (misalnya penyimpanan lokal perangkat, Google Contacts, SIM, atau akun kontak lain yang didukung).
-
-Kami tidak mengendalikan atau menyimpan data kontak setelah Anda menyimpannya ke buku telepon.
+Anda menentukan kartu yang dikirim ke AI dan kontak yang disimpan, diekspor, atau dibagikan. Tanggung jawab ini tidak menghapus atau membatasi kewajiban privasi kami menurut hukum yang berlaku.
 
 ---------------------------------------
-7. EKSPOR (CSV / EXCEL / VCF)
+6. Akses buku telepon dan penyimpanan kontak
 ---------------------------------------
-Jika Anda menggunakan fitur ekspor, Aplikasi dapat membuat file CSV, Excel, atau VCF secara lokal di perangkat Anda.
-File hasil ekspor ini dapat berisi detail kartu nama, detail CRM, tag, informasi pengingat, nama batch, dan informasi lain yang Anda masukkan atau pindai.
+Saat memilih “Simpan ke Buku Telepon”, Aplikasi meminta izin kontak jika diwajibkan Android.
 
-File hasil ekspor hanya disimpan di perangkat Anda, di lokasi yang dipilih oleh Aplikasi atau sistem Android.
-Anda bertanggung jawab atas cara Anda menyimpan, mengirim, mengunggah, atau membagikan file hasil ekspor setelah diekspor.
+- Baca Kontak: untuk menemukan akun tujuan dan, pada versi dengan pemeriksaan duplikat, membandingkan pilihan dengan entri yang ada.
+- Tulis Kontak: untuk menyimpan informasi pilihan ke akun tujuan Anda.
 
-Kami tidak mengunggah file CSV, Excel, atau VCF hasil ekspor ke server kami.
+Informasi buku telepon untuk fitur ini diproses lokal. Fitur ini tidak mengunggah buku telepon yang ada ke backend atau OpenAI.
 
----------------------------------------
-8. FITUR EMAIL
----------------------------------------
-Jika Anda menggunakan alat email batch atau tindakan kontak yang membuka aplikasi email, Aplikasi akan meneruskan alamat email yang dipilih ke aplikasi email yang terpasang di perangkat Anda agar Anda dapat meninjau dan mengirim pesan sendiri.
+Data tersimpan dapat memuat nama, jabatan, perusahaan, telepon, email, situs, alamat serta catatan, tag, daftar, dan pengingat terkait. Jika Anda memilih Google, Samsung, Exchange, atau akun tersinkron lain, penyedianya dapat menyinkronkan kontak sesuai pengaturan akun dan kebijakan privasinya.
 
-Kami tidak mengirim email dari server kami sendiri.
-Setiap email yang Anda kirim ditangani oleh penyedia email atau aplikasi email yang Anda pilih.
+Izin dapat ditolak atau dicabut di pengaturan Android. Fitur terkait tidak tersedia, tetapi fitur lain tetap dapat diakses. Kelola atau hapus kontak yang sudah disimpan melalui aplikasi kontak atau penyedia akun.
 
 ---------------------------------------
-9. IKLAN
+7. Ekspor, cadangan, dan penyimpanan eksternal
 ---------------------------------------
-Versi Aplikasi saat ini tidak menampilkan iklan pihak ketiga dan tidak mengintegrasikan jaringan iklan apa pun.
+File CSV, Excel, VCF, dan cadangan dapat memuat kontak, gambar kartu, serta catatan lain yang dipilih. File dibuat di perangkat. Backend tidak menerima file ekspor/cadangan pengguna melalui fitur ekspor.
 
-Tidak ada gambar kartu nama, teks yang diekstrak, data CRM, data kontak, data pengingat, atau file hasil ekspor yang dibagikan kepada mitra periklanan mana pun.
-
-Jika iklan ditambahkan pada versi mendatang, Kebijakan Privasi ini akan diperbarui sebelum iklan tersebut diaktifkan.
+File dapat tetap berada dalam penyimpanan bersama setelah pencopotan. Jika disalin ke cloud atau perangkat lain, pengaturan dan kebijakan tujuan berlaku. Layanan cadangan Android atau produsen perangkat juga dapat mencadangkan data yang memenuhi syarat, sesuai pengaturan perangkat dan konfigurasi cadangan Aplikasi.
 
 ---------------------------------------
-10. PEMBAYARAN DAN LANGGANAN
+8. Email, pesan, dan berbagi
 ---------------------------------------
-Langganan dan pembayaran ditangani oleh Google Play.
-Kami tidak mengumpulkan atau menyimpan informasi kartu pembayaran.
+Saat memilih tindakan email/berbagi, Aplikasi meneruskan informasi pilihan ke aplikasi yang Anda pilih untuk diperiksa dan dikirim sendiri. Tergantung fitur, isinya dapat berupa alamat penerima, teks pesan, kontak, gambar, atau file ekspor.
 
-Status langganan, detail produk, dan harga disediakan oleh Google Play Billing sesuai dengan akun Google Play, pasar, dan lingkungan perangkat Anda.
-
----------------------------------------
-11. LOG ERROR & KINERJA
----------------------------------------
-Kami dapat menerima informasi kerusakan/kinerja anonim dari Google Play Console atau alat platform terkait.
-Informasi ini tidak mencakup gambar kartu nama, teks kartu yang diekstrak, data CRM, isi buku telepon, atau file CSV/Excel/VCF yang diekspor.
+Pesan pelanggan ditangani aplikasi dan penyedia pesan/email pilihan, bukan dikirim backend atas nama Anda. Backend dapat mengirim peringatan teknis terpisah kepada pengembang. Peringatan dirancang tanpa isi kartu, buku telepon, atau token pembelian.
 
 ---------------------------------------
-12. KEAMANAN
+9. Iklan
 ---------------------------------------
-Permintaan AI dikirimkan menggunakan koneksi HTTPS terenkripsi.
-File yang disimpan secara lokal, catatan CRM, hasil ekspor, dan kontak di perangkat Anda dilindungi sesuai dengan keamanan perangkat Anda, pengaturan sistem operasi, serta aplikasi/akun yang Anda pilih untuk digunakan.
+Aplikasi saat ini tidak menampilkan iklan pihak ketiga atau mengintegrasikan jaringan iklan. Kami tidak memberikan isi kartu atau buku telepon kepada mitra iklan.
 
-Pengguna bertanggung jawab untuk:
-- mengamankan perangkat mereka sendiri,
-- mengendalikan apa yang mereka pindai,
-- meninjau file hasil ekspor,
-- dan memutuskan apa yang akan disimpan ke buku telepon atau dibagikan ke luar.
+Google Analytics for Firebase dapat memproses pengenal instance aplikasi, perangkat, dan iklan sesuai pengaturan, persetujuan, serta konfigurasi SDK. Analitik atau izin ID iklan tidak berarti Aplikasi menampilkan iklan. Analitik dijelaskan di Bagian 11. Kebijakan diperbarui jika praktik iklan berubah.
 
 ---------------------------------------
-13. PENYIMPANAN DAN RETENSI DATA
+10. Pembayaran dan langganan
 ---------------------------------------
-Kami tidak menyimpan gambar kartu nama, teks yang diekstrak, catatan CRM, tag, pengingat, atau file hasil ekspor di server kami.
-Data yang diproses oleh OpenAI ditangani sesuai dengan kebijakan OpenAI.
-Data yang disimpan secara lokal akan tetap berada di perangkat Anda sampai Anda menghapusnya, mencopot pemasangan Aplikasi, menghapusnya dari buku telepon Anda, atau menghapus file hasil ekspor secara manual.
+Google Play menangani pembelian dan pembayaran. Kami tidak menerima atau menyimpan detail kartu pembayaran.
+
+Aplikasi dan backend memakai token pembelian, informasi produk langganan, dan informasi aplikasi untuk memverifikasi hak akses dengan Google Play serta menerapkan batas penggunaan. Hasil verifikasi dapat di-cache sementara.
+
+Harga, perpanjangan, dan pengelolaan langganan tersedia melalui Google Play. Kelola atau batalkan di Google Play; mencopot Aplikasi tidak membatalkan langganan.
 
 ---------------------------------------
-14. PRIVASI ANAK
+11. Analitik, diagnostik, dan log teknis
 ---------------------------------------
-Aplikasi ini tidak ditujukan untuk anak-anak di bawah usia 13 tahun. Kami tidak dengan sengaja mengumpulkan informasi pribadi anak-anak.
+Kami memakai Google Analytics for Firebase, Firebase Crashlytics, laporan Google Play, dan log backend untuk memahami penggunaan, menyelidiki kegagalan, serta mengukur keandalan dan kinerja.
+
+Layanan dapat memproses pengenal instance/instalasi, informasi perangkat dan OS, versi, peristiwa penggunaan, jejak crash, ID permintaan, jumlah pindai, durasi, ukuran gambar dalam byte, dan kesalahan. Sebagian data dapat terkait pengenal pseudonim; tidak semua diagnostik kami sebut anonim.
+
+Isi buku telepon dan kartu tidak dimaksudkan masuk dalam peristiwa analitik atau log kinerja rutin. Log akses backend menyamarkan IP klien, tetapi penyedia jaringan/infrastruktur dapat secara mandiri memproses koneksi termasuk IP untuk menyediakan dan mengamankan layanannya.
+
+Privasi Firebase: https://firebase.google.com/support/privacy.
+Kebijakan Google: https://policies.google.com/privacy.
 
 ---------------------------------------
-15. PERUBAHAN
+12. Keamanan dan penyedia layanan
 ---------------------------------------
-Kami dapat memperbarui Kebijakan ini dari waktu ke waktu. Penggunaan Aplikasi secara terus-menerus berarti Anda menerima Kebijakan yang telah diperbarui.
+Permintaan AI memakai HTTPS terenkripsi. Kami memakai Render untuk hosting, OpenAI untuk AI, Google/Firebase untuk layanan di atas, dan penyedia email untuk peringatan pengembang. Penyedia memproses informasi yang diperlukan sesuai ketentuan dan pengaturan privasi yang berlaku.
+
+Data lokal tunduk pada keamanan dan cadangan perangkat. Ekspor, konten yang dibagikan, serta kontak/kalender tersinkron juga mengikuti keamanan dan kebijakan tujuan. Tidak ada penyimpanan atau transmisi yang dapat dijamin sepenuhnya aman.
+
+Penyedia dapat memproses informasi di negara lain. Ketentuan dan pengaturan perlindungan datanya berlaku bersama kewajiban hukum kami.
 
 ---------------------------------------
-16. HUKUM YANG BERLAKU
+13. Retensi data
 ---------------------------------------
-Kebijakan ini diatur oleh hukum Türkiye.
-Sengketa dapat diselesaikan oleh pengadilan yang berwenang di Istanbul kecuali diwajibkan lain oleh hukum.
+Setelah pemrosesan, kami tidak menyimpan gambar kartu, teks hasil ekstraksi, catatan CRM, tag, pengingat, atau file ekspor pengguna di server pemrosesan.
+
+Backend menyimpan catatan teknis berupa pengenal perangkat yang di-hash, penghitung pindai, ID permintaan, dan cap waktu untuk kuota, pencegahan proses berulang, serta pemecahan masalah. Catatan terpisah dari isi kartu. Catatan penggunaan/kuota saat ini tidak memiliki jadwal penghapusan otomatis. Catatan permintaan duplikat dihapus saat pembersihan berikutnya setelah jendela pemeriksaan berakhir. Log mengikuti pengaturan retensi penyedia hosting.
+
+Retensi OpenAI dan Google/Firebase bergantung pada layanan, kebijakan, dan kontrol akun. Tidak disimpannya isi kartu di backend bukan jaminan setiap penyedia segera menghapus semua informasi.
+
+Data lokal tetap ada sampai Anda menghapusnya atau menghapus penyimpanan lokal Aplikasi. Pencopotan tidak selalu menghapus ekspor, kontak tersimpan, kalender, atau cadangan perangkat/cloud. Kelola salinan melalui perangkat, aplikasi, atau penyedia terkait.
 
 ---------------------------------------
-17. KONTAK
+14. Pilihan dan permintaan privasi
 ---------------------------------------
-Dukungan / pertanyaan privasi: mybizzzcard@gmail.com
+Anda dapat mengelola izin Android, memilih penggunaan AI, menghapus catatan lokal, serta mengelola ekspor dan kontak tersinkron melalui aplikasinya.
+
+Hubungi mybizzzcard@gmail.com untuk pertanyaan atau permintaan mengenai informasi yang kami tangani. Hukum dapat memberi hak akses, koreksi, penghapusan, pembatasan, atau keberatan pemrosesan. Kami mungkin memerlukan informasi untuk menemukan catatan dan menilai permintaan. Kami tidak dapat mengakses atau menghapus dari jarak jauh file yang hanya berada di perangkat atau akun yang dipilih secara mandiri.
+
+Catatan tertentu mungkin perlu disimpan untuk kewajiban hukum, keamanan, atau pengajuan/pembelaan klaim hukum. Hak hukum Anda tetap berlaku.
+
+---------------------------------------
+15. Privasi anak
+---------------------------------------
+MyBizzCard tidak ditujukan untuk anak di bawah 13 tahun. Kami tidak sengaja mengumpulkan informasi mereka. Hubungi kami jika anak telah mengirim informasi pribadi agar dapat diselidiki dan ditangani.
+
+---------------------------------------
+16. Perubahan dan hukum yang berlaku
+---------------------------------------
+Kebijakan dapat diperbarui mengikuti perubahan Aplikasi, praktik, atau persyaratan. Tanggal di atas menunjukkan revisi terakhir. Jika diwajibkan, kami memberikan pemberitahuan atau meminta persetujuan sebelum pemrosesan yang berbeda secara material dimulai.
+
+Hukum privasi dan perlindungan konsumen yang berlaku, termasuk hak wajib di tempat tinggal Anda, tetap berlaku. Pemilihan hukum Türkiye tidak menghapus hak tersebut.
+
+---------------------------------------
+17. Kontak
+---------------------------------------
+Aplikasi: MyBizzCard
+Pengembang: sebagaimana tercantum pada halaman MyBizzCard di Google Play
+Privasi dan dukungan: mybizzzcard@gmail.com
 </pre>
-
 </div>
-
 <script>
 function copyText() {
     const text = document.getElementById("policyText").innerText;
@@ -225,6 +199,5 @@ function copyText() {
     alert("Kebijakan Privasi disalin!");
 }
 </script>
-
 </body>
 </html>
