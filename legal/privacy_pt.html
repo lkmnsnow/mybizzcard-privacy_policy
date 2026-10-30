@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MyBizzCard – Política de Privacidade</title>
 <style>
 body {
@@ -29,195 +30,168 @@ button {
     border-radius: 6px;
     font-size: 14px;
 }
-button:hover {
-    background: #2ea043;
-}
-pre {
-    white-space: pre-wrap;
-}
-h1 {
-    margin-top: 0;
-}
+button:hover { background: #2ea043; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+h1 { margin-top: 0; }
 </style>
 </head>
 <body>
-
 <div class="container">
     <button onclick="copyText()">Copiar</button>
     <h1>Política de Privacidade</h1>
-
 <pre id="policyText">
 POLÍTICA DE PRIVACIDADE
-Última atualização: 12 de janeiro de 2026
 
-Esta Política de Privacidade explica como o aplicativo móvel MyBizzCard (“Aplicativo”, “nós”, “nosso”) trata as informações. Ao usar o Aplicativo, você concorda com esta Política.
+Última atualização: 30 de outubro de 2026
 
-Contato: mybizzzcard@gmail.com
+Esta Política explica como o MyBizzCard (“Aplicativo”) acessa, usa, processa e retém informações. “Nós” e “nosso” referem-se ao desenvolvedor identificado na página do MyBizzCard no Google Play.
 
----------------------------------------
-1. INFORMAÇÕES QUE NÃO ARMAZENAMOS EM NOSSOS SERVIDORES
----------------------------------------
-Operamos um servidor de processamento seguro para habilitar recursos de IA.
-Esse servidor não armazena imagens de cartões de visita, texto OCR, dados de contato extraídos, notas de CRM, tags, conteúdo de lembretes, arquivos CSV ou arquivos Excel após a conclusão do processamento.
-Não criamos contas de usuário.
-
-Seus resultados de digitalização, listas em lote, registros de CRM, tags, lembretes, arquivos exportados e dados de cartões salvos são armazenados apenas no seu dispositivo, a menos que você opte por exportá-los ou salvá-los em outro local usando os recursos do seu dispositivo.
+Privacidade e suporte: mybizzzcard@gmail.com.
 
 ---------------------------------------
-2. PROCESSAMENTO OFFLINE (PLANO GRATUITO)
+1. Informações tratadas pelo Aplicativo
 ---------------------------------------
-A digitalização offline é executada no seu dispositivo. Quando você usa recursos offline, as imagens dos cartões e o texto são processados localmente.
+O MyBizzCard permite digitalizar cartões de visita e gerenciar contatos. Informações digitalizadas ou inseridas podem incluir nomes, cargos, empresas, telefones, e-mails, sites, endereços, imagens dos cartões e contatos no idioma original. Também é possível adicionar nomes de listas, notas CRM, etiquetas e lembretes.
 
-Exemplos:
-- Digitalizar cartão (offline)
-- Digitalizar QR no cartão (offline)
-- Salvar cartão recortado (salvo localmente no seu dispositivo)
-- Criação manual de cartão
+Resultados e registros de gerenciamento de contatos são armazenados no dispositivo. Podem ser incluídos em backups ou transferidos ao exportar, compartilhar, salvar na agenda ou usar outros recursos do dispositivo/conta. IA e registros técnicos são descritos separadamente abaixo. Não é necessário criar uma conta MyBizzCard.
 
 ---------------------------------------
-3. RECURSOS DE IA (PROCESSAMENTO OPENAI)
+2. Recursos locais e offline
 ---------------------------------------
-O Aplicativo inclui extração com tecnologia de IA. Quando a IA é usada, o Aplicativo envia de forma segura:
-- texto OCR extraído no seu dispositivo, ou
-- uma imagem do cartão (dependendo do recurso e do modo)
+Reconhecimento offline, leitura de QR, entrada manual, recorte e gerenciamento local processam o conteúdo no dispositivo. Essas ações não enviam conteúdo à OpenAI, salvo se você usar separadamente um recurso de IA.
 
-para a OpenAI para processamento. A OpenAI devolve ao seu dispositivo os campos estruturados do cartão.
-
-Limites de IA no Aplicativo:
-• Plano Gratuito: um número limitado de digitalizações com IA ao longo da vida
-• Plano AI Pro: uma cota mensal de uso de IA, sujeita às condições do plano exibidas no Aplicativo
-
-Não armazenamos em nossos servidores o texto OCR ou as imagens dos cartões enviados.
-
-A OpenAI processa os dados de acordo com sua própria Política de Privacidade e seus Termos.
+Alguns componentes usam serviços Google e podem baixar componentes necessários ou comunicar-se com o Google para oferecer o recurso. Disponibilidade e tratamento das informações do serviço estão sujeitos aos termos e informações de privacidade do Google.
 
 ---------------------------------------
-4. RECURSOS DE CRM EM LOTE
+3. Recursos de IA e processamento
 ---------------------------------------
-O Aplicativo pode permitir que você crie e gerencie listas em lote, digitalize vários cartões de visita, adicione notas de CRM, atribua tags, acompanhe detalhes de lembretes, filtre leads e gerencie registros de contato em um fluxo simples de CRM executado no dispositivo.
+Ao usar extração ou tradução por IA, a imagem ou o texto OCR selecionado é transmitido por HTTPS, pelo nosso backend hospedado na Render, à API da OpenAI. Os campos extraídos retornam ao Aplicativo.
 
-Essas informações de CRM em lote são armazenadas localmente no seu dispositivo, a menos que você opte por:
-- exportá-las como CSV ou Excel,
-- salvar contatos selecionados na agenda do seu telefone,
-- enviar e-mails em lote usando o aplicativo de e-mail instalado no seu dispositivo,
-- ou compartilhar manualmente os arquivos exportados.
+O conteúdo pode conter dados pessoais visíveis no cartão: nomes, cargos, empresas, telefones, e-mails, sites e endereços. A digitalização por IA não exige o envio da sua agenda existente. O acesso para seleção da conta e verificação de duplicatas ocorre separadamente no dispositivo.
 
-Não armazenamos seus registros de CRM em lote em nossos servidores.
+Nosso backend não retém imagens, textos OCR ou conteúdo de contatos extraído após o processamento. Registros técnicos separados constam na Seção 13. O processamento e a retenção pela OpenAI seguem os termos da API e os controles de dados da nossa conta: https://developers.openai.com/api/docs/guides/your-data.
+
+Os limites de IA dependem do plano e são exibidos no Aplicativo. Recursos disponíveis sem IA podem ser usados sem enviar conteúdo à OpenAI.
 
 ---------------------------------------
-5. RESPONSABILIDADE DO USUÁRIO E USO LÍCITO
+4. Listas, CRM e lembretes
 ---------------------------------------
-Você é responsável por garantir que tem o direito legal de digitalizar, salvar, exportar, armazenar, enviar por e-mail, compartilhar ou adicionar informações de cartões de visita e contatos à agenda do seu telefone ou aos seus registros de CRM usando o Aplicativo.
+Você pode organizar contatos digitalizados em listas e adicionar notas, etiquetas e acompanhamentos. Esses registros permanecem locais, salvo se você os exportar, compartilhar, salvar em outro aplicativo/conta ou incluir em backups.
 
-Quando exigido pela legislação aplicável, você deve obter o consentimento do titular do cartão ou ter outra base legal válida antes de processar seus dados pessoais. Você também é responsável por fornecer quaisquer avisos exigidos pela legislação aplicável e por respeitar quaisquer direitos de privacidade aplicáveis, incluindo direitos de objeção, exclusão, acesso, correção ou outros.
-
-O Aplicativo é fornecido como uma ferramenta para gerenciar informações de contato. Nós não determinamos a sua base legal para o tratamento de dados pessoais e não somos responsáveis por como você usa, compartilha, exporta, armazena ou processa dados de contato fora do Aplicativo.
+Quando um lembrete usa o calendário, o Aplicativo solicita as permissões necessárias. O provedor de uma conta sincronizada pode processar eventos conforme suas configurações e política. Não mantemos seus registros CRM em lote no servidor de processamento.
 
 ---------------------------------------
-6. AGENDA / SALVAMENTO DE CONTATOS
+5. Uso responsável dos contatos
 ---------------------------------------
-Se você optar por salvar um contato digitalizado ou registros de CRM selecionados na agenda do seu dispositivo, o Aplicativo gravará essas informações na conta de contatos que você selecionar no seu dispositivo.
+Dados de cartões e contatos podem pertencer a terceiros. Use o Aplicativo apenas com base legal adequada para digitalizar, salvar, exportar, entrar em contato ou compartilhar essas informações. Obtenha permissões e forneça avisos quando exigidos por lei, respeitando as solicitações relacionadas.
 
-Isso pode incluir:
-- nome
-- cargo
-- empresa
-- números de telefone
-- endereços de e-mail
-- site
-- endereço
-- campos em idioma local
-- notas, tags, detalhes do lote ou detalhes do lembrete, quando aplicável
-
-O armazenamento na agenda é gerenciado pelo sistema operacional do seu dispositivo e pelo provedor da conta de contatos que você escolher (por exemplo, armazenamento local do dispositivo, Google Contacts, SIM ou outra conta de contatos compatível).
-
-Não controlamos nem armazenamos os dados de contato depois que você os salva na sua agenda.
+Você controla os cartões enviados à IA e os contatos salvos, exportados ou compartilhados. Essas responsabilidades não excluem nem limitam nossas obrigações legais de privacidade.
 
 ---------------------------------------
-7. EXPORTAÇÕES (CSV / EXCEL / VCF)
+6. Acesso à agenda e salvamento de contatos
 ---------------------------------------
-Se você usar recursos de exportação, o Aplicativo poderá gerar arquivos CSV, Excel ou VCF localmente no seu dispositivo.
-Esses arquivos exportados podem conter detalhes de cartões de visita, detalhes de CRM, tags, informações de lembretes, nomes de lotes e outras informações que você inseriu ou digitalizou.
+Ao escolher “Salvar na agenda”, o Aplicativo solicita permissões de contatos quando exigido pelo Android.
 
-Os arquivos exportados são armazenados apenas no seu dispositivo, no local selecionado pelo Aplicativo ou pelo sistema Android.
-Você é responsável pela forma como armazena, envia, faz upload ou compartilha os arquivos exportados após a exportação.
+- Ler contatos: para identificar contas de destino e, em versões com verificação de duplicatas, comparar contatos selecionados com os existentes.
+- Gravar contatos: para salvar os dados selecionados na conta escolhida.
 
-Não enviamos arquivos CSV, Excel ou VCF exportados para nossos servidores.
+As informações lidas para esses recursos são processadas localmente. Esses recursos não enviam sua agenda existente ao nosso backend ou à OpenAI.
 
----------------------------------------
-8. RECURSOS DE E-MAIL
----------------------------------------
-Se você usar ferramentas de e-mail em lote ou ações de contato que abrem um aplicativo de e-mail, o Aplicativo encaminha os endereços de e-mail selecionados para o aplicativo de e-mail instalado no seu dispositivo para que você possa revisar e enviar a mensagem por conta própria.
+Podem ser salvos nomes, cargos, empresas, telefones, e-mails, sites, endereços e, quando aplicável, notas, etiquetas, listas e lembretes. Se escolher Google, Samsung, Exchange ou outra conta sincronizada, o provedor poderá sincronizar os contatos conforme suas configurações e política.
 
-Não enviamos e-mails a partir dos nossos próprios servidores.
-Qualquer e-mail enviado por você será tratado pelo provedor de e-mail ou pelo aplicativo de e-mail de sua escolha.
+Você pode negar ou revogar permissões nas configurações do Android. Recursos dependentes delas ficam indisponíveis, mas outros permanecem acessíveis. Gerencie ou exclua contatos já salvos pelo aplicativo de contatos ou provedor da conta.
 
 ---------------------------------------
-9. PUBLICIDADE
+7. Exportações, backups e armazenamento externo
 ---------------------------------------
-A versão atual do Aplicativo não exibe publicidade de terceiros e não integra redes de anúncios.
+Arquivos CSV, Excel, VCF e backups podem conter contatos, imagens e outros registros que você decidir incluir. São gerados no dispositivo. O recurso de exportação não envia esses arquivos de usuário ao nosso backend.
 
-Nenhuma imagem de cartão de visita, texto extraído, dados de CRM, dados de contato, dados de lembretes ou arquivos exportados são compartilhados com parceiros de publicidade.
-
-Se anúncios forem adicionados em uma versão futura, esta Política de Privacidade será atualizada antes que eles sejam ativados.
+Arquivos podem permanecer no armazenamento compartilhado após a desinstalação. Se copiados para a nuvem ou outro dispositivo, aplicam-se as configurações e a política do destino. Serviços de backup do Android ou fabricante também podem copiar dados elegíveis conforme as configurações do dispositivo e do Aplicativo.
 
 ---------------------------------------
-10. PAGAMENTOS E ASSINATURAS
+8. E-mail, mensagens e compartilhamento
 ---------------------------------------
-Assinaturas e pagamentos são processados pelo Google Play.
-Não coletamos nem armazenamos informações de cartão de pagamento.
+Ao escolher e-mail ou compartilhamento, o Aplicativo repassa as informações selecionadas ao aplicativo escolhido para você revisar e concluir. Conforme o recurso, podem incluir destinatários, texto, contatos, imagens ou arquivos exportados.
 
-O status da assinatura, os detalhes do produto e os preços são fornecidos pelo Google Play Billing de acordo com sua conta Google Play, seu mercado e o ambiente do seu dispositivo.
-
----------------------------------------
-11. LOGS DE ERRO E DESEMPENHO
----------------------------------------
-Podemos receber informações anônimas sobre falhas e desempenho do Google Play Console ou de ferramentas relacionadas à plataforma.
-Essas informações não incluem imagens de cartões de visita, texto extraído de cartões, dados de CRM, conteúdo da agenda ou arquivos CSV/Excel/VCF exportados.
+Mensagens para clientes são tratadas pelo aplicativo e provedor de mensagens/e-mail escolhidos, e não enviadas pelo backend em seu nome. O backend pode enviar separadamente alertas técnicos ao desenvolvedor, projetados para não conter conteúdo de cartões ou agenda nem tokens de compra.
 
 ---------------------------------------
-12. SEGURANÇA
+9. Publicidade
 ---------------------------------------
-As solicitações de IA são transmitidas por conexões HTTPS criptografadas.
-Arquivos armazenados localmente, registros de CRM, exportações e contatos no seu dispositivo são protegidos de acordo com a segurança do seu dispositivo, as configurações do sistema operacional e os aplicativos/contas que você escolher usar.
+O Aplicativo atual não exibe anúncios de terceiros nem integra redes de publicidade. Não fornecemos conteúdo de cartões ou agenda a parceiros publicitários.
 
-Os usuários são responsáveis por:
-- proteger seus próprios dispositivos,
-- controlar o que digitalizam,
-- revisar os arquivos exportados,
-- e decidir o que salvar na agenda ou compartilhar externamente.
+O Google Analytics for Firebase pode processar identificadores de instância, dispositivo e publicidade conforme configurações, consentimento e SDK. A presença de análise ou permissão de ID de publicidade não significa que anúncios são exibidos. Consulte a Seção 11. Atualizaremos a política se nossas práticas publicitárias mudarem.
 
 ---------------------------------------
-13. RETENÇÃO DE DADOS
+10. Pagamentos e assinaturas
 ---------------------------------------
-Não retemos em nossos servidores imagens de cartões de visita, texto extraído, notas de CRM, tags, lembretes ou arquivos exportados.
-Os dados processados pela OpenAI são tratados de acordo com as políticas da OpenAI.
-Os dados salvos localmente permanecem no seu dispositivo até que você os exclua, desinstale o Aplicativo, os remova da sua agenda ou exclua manualmente os arquivos exportados.
+O Google Play gerencia compras e pagamentos. Não recebemos nem armazenamos dados de cartões de pagamento.
+
+Aplicativo e backend usam tokens de compra, informações do produto de assinatura e do aplicativo para verificar direitos com o Google Play e aplicar limites. Resultados podem ser temporariamente armazenados em cache.
+
+Preços, renovação e gerenciamento são fornecidos pelo Google Play. Gerencie ou cancele a assinatura nele; desinstalar não cancela a assinatura.
 
 ---------------------------------------
-14. PRIVACIDADE DE CRIANÇAS
+11. Análise, diagnóstico e registros técnicos
 ---------------------------------------
-O Aplicativo não se destina a crianças menores de 13 anos. Não coletamos conscientemente informações pessoais de crianças.
+Usamos Google Analytics for Firebase, Firebase Crashlytics, relatórios do Google Play e logs do backend para compreender uso, investigar falhas e medir confiabilidade e desempenho.
+
+Esses serviços podem processar identificadores de instância/instalação, informações do dispositivo e sistema, versão, eventos, rastros de falhas, IDs de solicitação, contagens de digitalizações, tempos, tamanhos de imagens em bytes e erros. Alguns dados podem estar associados a um identificador pseudônimo; nem todo diagnóstico é anônimo.
+
+Conteúdo de agenda e cartões não é destinado à inclusão em eventos analíticos ou logs rotineiros de desempenho. Logs de acesso do backend ocultam IPs dos clientes, mas provedores de rede e infraestrutura podem processar independentemente informações de conexão, inclusive IPs, para fornecer e proteger serviços.
+
+Privacidade Firebase: https://firebase.google.com/support/privacy.
+Política Google: https://policies.google.com/privacy.
 
 ---------------------------------------
-15. ALTERAÇÕES
+12. Segurança e provedores
 ---------------------------------------
-Podemos atualizar esta Política periodicamente. O uso contínuo do Aplicativo significa que você aceita a Política atualizada.
+Solicitações de IA usam HTTPS criptografado. Usamos Render para hospedagem, OpenAI para IA, Google/Firebase para os serviços descritos e nosso provedor de e-mail para alertas ao desenvolvedor. Cada um trata as informações necessárias conforme termos e acordos de privacidade aplicáveis.
+
+Informações locais dependem da segurança e dos backups do dispositivo. Exportações, compartilhamentos e contatos/calendários sincronizados também seguem a segurança e as políticas dos destinos. Não há garantia de segurança absoluta de armazenamento ou transmissão.
+
+Provedores podem processar dados em outros países, sujeitos a seus termos e mecanismos de proteção de dados e às nossas obrigações legais.
 
 ---------------------------------------
-16. LEI APLICÁVEL
+13. Retenção de dados
 ---------------------------------------
-Esta Política é regida pelas leis da Türkiye.
-Disputas poderão ser resolvidas pelos tribunais competentes de Istambul, salvo se a lei exigir de outra forma.
+Após o processamento, não retemos imagens, textos extraídos, notas CRM, etiquetas, lembretes ou arquivos exportados de usuários no servidor de processamento.
+
+Retemos registros técnicos: identificadores de dispositivo submetidos a hash, contadores, IDs de solicitação e carimbos de data/hora, para cotas, prevenção de processamento duplicado e solução de problemas. São separados do conteúdo dos cartões. Atualmente, registros de uso e cotas não têm prazo de exclusão automática. Registros de solicitações duplicadas são removidos nas limpezas posteriores ao término da janela de verificação. Logs seguem a retenção configurada pelo provedor de hospedagem.
+
+A retenção da OpenAI e Google/Firebase depende do serviço, políticas e controles da conta. A não retenção do conteúdo no backend não garante que todos os provedores apaguem imediatamente todas as informações.
+
+Dados locais permanecem até sua exclusão ou remoção do armazenamento local. Desinstalar não remove necessariamente exportações, contatos, eventos ou backups do dispositivo/nuvem. Gerencie essas cópias pelo dispositivo, aplicativo ou provedor correspondente.
 
 ---------------------------------------
-17. CONTATO
+14. Escolhas e solicitações de privacidade
 ---------------------------------------
-Suporte / dúvidas sobre privacidade: mybizzzcard@gmail.com
+Você pode gerenciar permissões no Android, escolher usar IA, excluir registros locais e gerenciar exportações e contatos sincronizados nos aplicativos respectivos.
+
+Contate mybizzzcard@gmail.com para dúvidas ou solicitações sobre dados que tratamos. Conforme a lei, você pode ter direitos de acesso, correção, exclusão, restrição ou oposição. Podemos precisar de informações suficientes para identificar registros e avaliar pedidos. Não podemos acessar ou apagar remotamente arquivos existentes somente no seu dispositivo ou em contas escolhidas de forma independente.
+
+Alguns registros podem precisar ser retidos por obrigações legais, segurança ou exercício/defesa de direitos. Os direitos legais aplicáveis permanecem preservados.
+
+---------------------------------------
+15. Privacidade infantil
+---------------------------------------
+MyBizzCard não se destina a menores de 13 anos. Não coletamos conscientemente seus dados. Contate-nos caso acredite que uma criança enviou informações, para investigação e medidas adequadas.
+
+---------------------------------------
+16. Alterações e legislação aplicável
+---------------------------------------
+Podemos atualizar esta política por mudanças no Aplicativo, práticas ou requisitos. A data acima identifica a revisão mais recente. Quando exigido, avisaremos ou obteremos consentimento antes de processamento substancialmente diferente.
+
+Aplicam-se as leis de privacidade e proteção do consumidor pertinentes, incluindo direitos obrigatórios do seu local de residência. A escolha da legislação turca não exclui tais direitos.
+
+---------------------------------------
+17. Contato
+---------------------------------------
+Aplicativo: MyBizzCard
+Desenvolvedor: conforme identificado na página MyBizzCard no Google Play
+Privacidade e suporte: mybizzzcard@gmail.com
 </pre>
-
 </div>
-
 <script>
 function copyText() {
     const text = document.getElementById("policyText").innerText;
@@ -225,6 +199,5 @@ function copyText() {
     alert("Política de Privacidade copiada!");
 }
 </script>
-
 </body>
 </html>
